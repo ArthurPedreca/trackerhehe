@@ -42,6 +42,10 @@ function iniciar() {
   
       p.innerHTML = 'Sua precisão está: ' + precisao.toFixed() + '%';
       document.body.appendChild(p);
+
+      if(precisao > 100){
+        precisao = 100
+      }
   
       document.body.appendChild(p1);
       if (precisao < 10) {
