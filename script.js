@@ -59,6 +59,15 @@ function iniciar() {
       p1.innerHTML = 'AI TOMAAAA O MANO SABE MUITO';
     }
 
+    if (totalTiros >= 200) {
+      clearInterval(intervalo);
+      clearInterval(intervalo1);
+      p.innerHTML = 'Sua precisão está: ' + precisao.toFixed() + '% (Final)';
+
+      alvo.style.display = "none"
+    }
   }
   setInterval(precisao, 100);
 }
+
+iniciar();
